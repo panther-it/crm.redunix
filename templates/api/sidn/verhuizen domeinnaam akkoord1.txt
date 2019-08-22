@@ -1,0 +1,27 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+drs-ticket..........................: 
+drs-aanvraagtype....................: verhuizen-domeinnaam-akkoord1
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+---------------------------- gegevens -----------------------------
+
+domeinnaam..........................: $domainname
+
+Door bij onderstaand veld "ja" in te vullen, verklaart de
+deelnemer dat bovenstaande domeinnaam met instemming van de houder
+wordt verhuisd.
+
+verhuizing-domeinnaam-akkoord.......: ja
+
+------------------------- einde formulier -------------------------
+
+ 
+ 

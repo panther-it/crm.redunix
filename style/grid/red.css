@@ -1,0 +1,146 @@
+TABLE.grid
+{
+	height		: auto;
+	overflow	: hidden;
+	background-color: white;
+	background-image: url(http://www.redunix.nl/img/gradient_large.jpg);
+	background-repeat: repeat-x;
+	margin-left	: 0px;
+	width		: 100%;
+        border-collapse : collapse;
+        border-spacing  : 0px;
+}
+
+TABLE.grid TR TH
+{
+	padding-top	: 40px;
+        color		: #910020;
+	text-align	: left;
+}
+
+TABLE.grid TR TH A
+{
+        text-decoration : none;
+}
+
+TABLE.grid TR TD
+{
+        padding         : 2px;
+        margin          : 0px;
+	font-size       : 11px;
+}
+
+TABLE.grid TR.even
+{
+	background-color: transparent;
+}
+
+TABLE.grid TR.odd
+{
+	background-color: #EEEEEE;
+}
+
+TABLE.grid TR TD INPUT,
+TABLE.grid TR TD SELECT
+{
+        border		: none;
+	border-bottom	: solid 1px #DDDDDD; 
+	border-left	: solid 1px #DDDDDD; 
+	width		: 100%;
+}
+
+TABLE.grid TR.filter
+{
+        display         : none;
+}
+
+TABLE.grid TR.insert
+{
+        display         : none;
+}
+
+TABLE.grid TR.selected
+{
+        background-color: #FFFFEE;
+}
+
+TABLE.grid TR.selected TD INPUT,
+TABLE.grid TR.selected TD SELECT
+{
+        border		: none;
+	border-bottom	: solid 1px #DDDDDD; 
+	border-left	: solid 1px #DDDDDD; 
+}
+
+.error,
+TABLE.grid TR.selected TD INPUT.error,
+TABLE.grid TR.selected TD SELECT.error,
+TABLE.grid TR.selected TD TEXTAREA.error
+{
+        border          : solid 1px red;
+}
+
+TABLE.grid TR.selected TD SPAN.rowButtons,
+TABLE.grid TR.normal   TD SPAN.rowNr,
+TABLE.grid TR.selected TD INPUT,
+TABLE.grid TR.selected TD SELECT,
+TABLE.grid TR.selected TD TEXTAREA,
+TABLE.grid TR.normal   TD A,
+TABLE.grid TR.normal   TD SPAN.text
+{
+        display         : inline-block;
+}
+
+TABLE.grid TR.normal   TD SPAN.text IMG
+{
+	padding-right    : 5px;
+	padding-left     : 5px;
+}
+
+TABLE.grid TR.normal   TD SPAN.rowButtons,
+TABLE.grid TR.selected TD SPAN.rowNr,
+TABLE.grid TR.selected TD A,
+TABLE.grid TR.selected TD SPAN.text,
+TABLE.grid TR.insert   TD SPAN.text,
+TABLE.grid TR.filter   TD SPAN.text,
+TABLE.grid TR.normal   TD INPUT,
+TABLE.grid TR.normal   TD SELECT,
+TABLE.grid TR.normal   TD TEXTAREA,
+TABLE.readonly TR.selected TD SPAN.rowButtons,
+TABLE.readonly TR.selected TD INPUT,
+TABLE.readonly TR.selected TD TEXTAREA
+{
+        display         : none;
+}
+
+TABLE.readonly TR.selected TD SPAN.text,
+TABLE.readonly TR.selected TD SPAN.rowNr,
+TABLE.readonly TR.selected TD A
+{
+	display		: inline;
+}
+
+
+input[type="hidden"]
+{
+	display		: none;
+	width		: 0px;
+	height		: 0px;
+	visibility	: hidden;
+}
+
+INPUT
+,SELECT
+{
+        background-color: transparent;
+        width           : 100%;
+}
+
+SPAN.rowButtons INPUT[type="button"],
+SPAN.rowButtons INPUT[type="image"]
+{
+	width: 32px;
+	height: 32px;
+}
+
+

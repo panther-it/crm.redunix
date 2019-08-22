@@ -1,0 +1,31 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+drs-aanvraagtype....................: wijzigen-contactpersoongegevens
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+-------------------------- contactpersonen ------------------------
+
+houder-contact-handle...............: $owner_sidn_handle 
+
+houder-contact-achternaam...........: $owner_lastname
+houder-contact-tussenvoegsels.......: 
+houder-contact-voorletters..........: $owner_firstname
+houder-contact-geslacht.............: M
+
+houder-adminc-tel-landnummer........: +31
+houder-adminc-tel-nummer............: $adminc_phone
+houder-adminc-emailadres............: $adminc_email
+houder-techc-tel-landnummer.........: +31
+houder-techc-tel-nummer.............: $techc_phone
+houder-techc-emailadres.............: $techc_email
+
+domeinnaam..........................: $domainname
+
+------------------------- einde formulier -------------------------

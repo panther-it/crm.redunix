@@ -1,0 +1,42 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+drs-aanvraagtype....................: verzoek-uit-quarantaine
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+------------------------ domeinnaamgegevens -----------------------
+
+domeinnaam..........................: $domainname
+
+-------------------------- nameservers ----------------------------
+
+master-nameserver-naam..............: $nameservers_ns1
+      master-nameserver-ip-adres....: 
+
+slave-nameserver-naam...............: $nameservers_ns2
+      slave-nameserver-ip-adres.....: 
+
+      slave-nameserver-naam.........: $nameservers_ns3
+      slave-nameserver-ip-adres.....: 
+
+De aanvrager van bovenstaande domeinnaam heeft verklaard dat de
+aanvraag voldoet aan de bepalingen in het Reglement voor registratie
+van .nl-domeinnamen. De deelnemer verklaart van de aanvrager een
+ingevuld en ondertekend registratiecontract te hebben ontvangen.
+
+registratiecontract-akkoord.........: ja
+
+De deelnemer verklaart te handelen namens de houder van het betreffende domein.
+Daarnaast is de deelnemer op de hoogte van de kosten welke met het uit
+quarantaine halen gemoeid zijn.
+
+haal-uit-quarantaine-akkoord........: ja
+
+
+------------------------- einde formulier -------------------------

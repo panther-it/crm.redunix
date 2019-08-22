@@ -1,0 +1,365 @@
+<HTML>
+    <HEAD>
+        <TITLE>REDUNIX - Internet Diensten</TITLE>
+        <STYLE>
+            BODY, TD
+            {
+                font-family: "Lucida Console";
+                font-size: 11px;
+            }
+
+            .upperline
+            {
+                border-top: 1px solid gray;
+            }
+
+            .lowerline
+            {
+                border-bottom: 1px solid gray;
+            }
+
+            .price
+            {
+                text-align: right;
+            }
+
+            TR#content TD
+            {
+                padding-top: 20px;
+                padding-bottom: 40px;
+            }
+
+            @media print
+            {
+                TR#content TD
+                {
+                    height: 820px;
+                }
+
+                TABLE#metaheader TD#logo
+                {
+                /*    visibility: hidden; */
+                }
+            }
+
+            TABLE#metaheader
+            {
+                height: 240px;
+                border-bottom: solid 1px black;
+                margin-bottom: 10px;
+            }
+            
+            TABLE#metaheader TD#meta
+            {
+                padding-top: 70px;
+                padding-left: 40px;
+            }
+            
+            TABLE#metaheader TD#logo DIV
+            {
+                font-size: 10px;
+                padding-left: 48px;
+            }
+
+            TABLE
+            {
+                width: 100%;
+            }
+            TH
+            {
+                text-align: left;
+                color: #772222;
+            }
+            TD
+            {
+                vertical-align: top;
+            }
+
+            #footer
+            {
+                text-align: center;
+                font-size: 8px;
+                padding-left: 80px;
+                padding-right: 80px;
+                color: #444444;
+            }
+            @media screen
+            {
+                #footer
+                {
+                    padding-bottom: 150px;
+                }
+            }
+
+            A
+            {
+                text-decoration: none;
+                color: #444444;
+            }
+            H1
+            {
+                font-family: "Cooper SSi";
+                font-size: 36px;
+                color: #992222;
+            }
+        </STYLE>
+    </HEAD>
+    
+    <BODY>
+        <TABLE>
+            <TR>
+                <TD>
+                    <TABLE id="metaheader">
+                        <TR>
+                            <TD id="meta">
+                                <H1>Welkom bij REDUNIX</H1>
+                                #COMPANY#<BR/>
+                                t.a.v. #FULLNAME#<BR/>
+                                <BR/>
+                                Referentie   : Welkom #COMPANY#<BR/>
+                                Datum : #DATESENT#<BR/>
+                            </TD>
+                            <TD style="width: 220px;" id="logo">
+                                <IMG src="http://www.redunix.nl/logo_klein.jpg" width="182" />
+                                <DIV>
+                                Postbus 25243<BR/>
+                                3001 HE Rotterdam<BR/>
+                                T 010.7142100<BR/>
+                                F 084.2213172<BR/>
+                                <A HREF="mailto:info@redunix.nl">info@redunix.nl</A><BR/>
+                                KvK 24378209<BR/>
+                                BTW NL1648.60.137.B01<BR/>
+                                Postbank 5083330<BR/>
+                                IBAN NL53 PSTB 0005 0833 30<BR/>
+                                BIC  PSTBNL21<BR/>
+                                </DIV>
+                            </TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR id="content">
+                <TD>
+                    Geachte #FULLNAME#,<BR/>
+                    <BR/>
+                    Hierbij heten wij u van harte welkom als klant bij Redunix.<BR/>
+                    <BR/>
+                    U heeft bij ons de volgende producten en diensten afgenomen:<BR/>
+                    <ul>
+                        <li>Colocated Hosting - 1U</li>
+                    </ul>
+                    <BR/>
+                    U heeft gekozen voor betaling per maand.<BR/>
+                    Facturering zal geschieden naar:<BR>
+                    <div style="padding-left: 20px;">
+                        #EMAIL#<BR/>
+                    </div>
+                    Ten name van:
+                    <div style="padding-left: 20px;">
+                        #COMPANY#<BR/>
+                        #ADDRESS#<BR/>
+                    </div>
+                    <BR/>
+
+                    Ter ondersteuning van deze colocated hosting dienst kunnen wij u nog de volgende diensten bieden:<BR/>
+                    <ul>
+                        <li>24/7 Beheer &amp; Support door REDUNIX - &euro; 39,-/maand</li>
+                        <li>Aansluiting op de PowerSwitch waardoor vanaf afstand de server gereboot kan worden - &euro; 5,-/maand</li>
+                        <li>Aansluiting op de Serial Console server waardoor out-of-band management mogelijk is - &euro; 5,-/maand<BR/>
+                            inclusief PXE boot waardoor out-of-band installatie of rescue CD's uitgevoerd kunnen worden vanaf het netwerk</li>
+                        <li>Redundante uplink. (twee utp kabels naar twee verschillende switches met ieder z'n eigen uplink)</li>
+                        <li>Monitoring: wordt per email of per sms op de hoogte gesteld als uw server of 1 van de onderdelen/services daarvan niet meer werken. - &euro; 3,-/maand</li>
+                        <li>Dagelijkse backups naar een offsite lokatie - &euro; 0,50 eurocent per GByte/maand</li>
+                        <li>Remote Hands: wij helpen u graag met uw werkzaamheden - &euro; 35,-/uur. Minimaal 1 uur.</li>
+                    </ul>
+                    <BR/>
+                    <BR/>
+                    Bijgevoegd vindt u de technische gegevens behorende bij deze colocatie dienst.<BR/>
+                    <BR/>
+
+                    Mocht u toegang willen tot uw server(s), dan dient u dit van te voren bij ons aan te melden.<BR/>
+                    Vervolgens dient u zich bij de balie van het datacenter te identificeren met een geldig identiteitsbewijs.<BR/>
+                    <BR/>
+                    Mocht u nog vragen hebben dan kunt u een email sturen naar support@redunix.nl of bellen naar 010.7142100.<BR/>
+                    Heeft u buiten kantoortijd een storing aan uw server of u wilt ons dringend bereiken dan kunt u hetzelfde nummer bellen. U dient dan echter een voicemail  achter te laten. Wij bellen dan vrijwel direct terug.<BR/>
+                    <BR/>
+                    Met vriendelijke groeten,<BR/>
+                    <BR/>
+                    <BR/>
+                    <BR/>
+                    REDUNIX - Internet Diensten<BR/>
+                </TD>
+            </TR>
+            <TR>
+                <TD class="upperline" id="footer">
+                    Op alle producten, offertes overeenkomsten en facturen van REDUNIX zijn de algemene voorwaarden van toepassing. 
+                    Deze zijn te vinden op <a href="http://www.redunix.nl/overons/voorwaarden.html">www.redunix.nl/overons/voorwaarden.html</a>.
+                </TD>
+            </TR>
+        </TABLE>
+
+        <!-- PAGE 2 -->
+        <TABLE style="page-break-before: always;">
+            <TR>
+                <TD>
+                    <TABLE id="metaheader">
+                        <TR>
+                            <TD id="meta">
+                                <H1>Technische Gegevens</H1>
+                                #COMPANY#<BR/>
+                                t.a.v #FULLNAME#<BR/>
+                                <BR/>
+                                Referentie   : Welkom #COMPANY#<BR/>
+                                Datum : #DATESENT#<BR/>
+                            </TD>
+                            <TD style="width: 220px;" id="logo">
+                                <IMG src="http://www.redunix.nl/logo_klein.jpg" width="182" />
+                                <DIV>
+                                Postbus 25243<BR/>
+                                3001 HE Rotterdam<BR/>
+                                T 010.7142100<BR/>
+                                F 084.2213172<BR/>
+                                <A HREF="mailto:info@redunix.nl">info@redunix.nl</A><BR/>
+                                KvK 24378209<BR/>
+                                BTW NL1648.60.137.B01<BR/>
+                                Postbank 5083330<BR/>
+                                IBAN NL53 PSTB 0005 0833 30<BR/>
+                                BIC  PSTBNL21<BR/>
+                                </DIV>
+                            </TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR id="content">
+                <TD>
+                <PRE>
+                Netwerk      : 193.34.166.0
+                Subnetmask   : 255.255.254.0
+                Gateway      : 193.34.166.1
+
+                IP-Adressen  : #IPADDRESSES#
+
+                DNS-servers  : 85.12.39.8 
+                               217.67.224.2 
+                               217.67.230.108
+
+
+                Powerswitch  :
+                  URL        : http://noc.redunix.nl
+                  Username   : #USERNAME#
+                  Password   : #PASSWORD#
+
+
+                Statistieken :
+                  URL        : http://dataverkeer.redunix.nl
+                  Username   : #USERNAME#
+                  Password   : #PASSWORD#
+
+
+                DataCenter   :
+                  GrafiX NOC
+                  Stationsplein 20
+                  2907 MJ  Capelle a/d IJssel
+                  Suite      : POP2
+                  Rack       : 23
+
+                </PRE>
+                </TD>
+            </TR>
+            <TR>
+                <TD class="upperline" id="footer">
+                    Op alle producten, offertes overeenkomsten en facturen van REDUNIX zijn de algemene voorwaarden van toepassing. 
+                    Deze zijn te vinden op <a href="http://www.redunix.nl/overons/voorwaarden.html">www.redunix.nl/overons/voorwaarden.html</a>.
+                </TD>
+            </TR>
+        </TABLE>
+     
+        <!-- PAGE 3 -->
+        <TABLE style="page-break-before: always;">
+            <TR>
+                <TD>
+                    <TABLE id="metaheader">
+                        <TR>
+                            <TD id="meta">
+                                <H1>Toegangsprocedure</H1>
+                                <BR/>
+                                Referentie   : Toegangsprocedure GrafiX NOC<BR/>
+                                Datum : 17-05-2007<BR/>
+                            </TD>
+                            <TD style="width: 220px;" id="logo">
+                                <IMG src="http://www.redunix.nl/logo_klein.jpg" width="182" />
+                                <DIV>
+                                Postbus 25243<BR/>
+                                3001 HE Rotterdam<BR/>
+                                T 010.7142100<BR/>
+                                F 084.2213172<BR/>
+                                <A HREF="mailto:info@redunix.nl">info@redunix.nl</A><BR/>
+                                KvK 24378209<BR/>
+                                BTW NL1648.60.137.B01<BR/>
+                                Postbank 5083330<BR/>
+                                IBAN NL53 PSTB 0005 0833 30<BR/>
+                                BIC  PSTBNL21<BR/>
+                                </DIV>
+                            </TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR id="content">
+                <TD>
+                    <h3>Locatie</h3>
+                    <pre>
+GrafiX NOC
+Stationsplein 20
+2907 MJ  Capelle a/d IJssel
+Suite      : POP2
+Rack       : 23
+                    </pre>
+                    <h3>Toegangsbenodigdheden</h3>
+                    U heeft de volgende toebehoren nodig om toegang tot uw server te verkrijgen:<BR/>
+                    <ul>
+                        <li><b>Sleutel buitendeur</b><br/>Alleen nodig na werktijd wanneer deze draaideur op slot zit</li>
+                        <li><b>Toegangspas</b><br/>Nodig voor de betreffende tussendeuren in het datacenter</li>
+                        <li><b>Sleutels serverracks</b><br/>Nodig om de betreffende serverracks te openen</li>
+                    </ul>
+                    U krijgt van ons een eigen sleutel buitendeur en unieke toegangspas.<br/>
+                    De sleutels van de serverracks bevinden zich in de KVM-lade in rack 21 (middelste). Dit rack zit niet op slot.<BR/>
+                    <BR/>
+
+                    <h3>Aanmelden</h3>
+                    Op het moment dat u toegang wilt tot uw server(s) belt u ons op op ons kantoornr 010.7142100. Deze staat na werktijd doorgeschakeld naar een engineer van ons. Uiteraard kunt u ons ook emailen op <a href="mailto:support@redunix.nl">support@redunix.nl</a>.<BR/>
+                    U geeft dan het volgende door:<BR/>
+                    <ul>
+                        <li>De namen van de personen die toegang willen</li>
+                        <li>Het pasnr van uw toegangspas (staat rechtsonder op de pas)</li>
+                        <li>Datum, tijdstip en duur van uw bezoek</li>
+                        <li>Reden van uw bezoek</li>
+                    </ul>
+                    Als uw nieuwe hardware komt plaatsen dan dient er ten alle tijde een engineer van REDUNIX aanwezig te zijn. Dit in verband met keuze van lokatie in het rack en het aanleggen van bekabeling.<BR/>
+                    Het verwijderen of herplaatsen van uw server mag u zelfstandig doen, wij willen u er echter wel op wijzen dat u voorzichtig met de intrastructuur om dient te gaan. Kijkt u daarbij voornamelijk uit naar het niet per ongeluk los trekken van een kabel doordat deze per ongeluk aan de server blijft haken bij het plaatsen.<BR/>Mocht u andere klanten hinderen hierdoor dan zal dit beboet worden. De hoogte van deze boete wordt bepaald door REDUNIX.<BR/>
+                    <BR/>
+
+                    <h3>Extra Service</h3>
+                    <ul>
+                    <li>
+                    In rack 21 bevindt zich een KVM (keyboard, video, mouse) lade. Hier mag u vrij gebruik van maken.<BR/>
+                    </li>
+                    <li>
+                    In het netwerk bevindt zich een DHCP & TFTP server ten behoeve van PXE (netwerk) boot. Hierop staan diverse install & rescue boot images van diverse linux distributies, waaronder CentOS, Fedora &amp; Debian. Het staat u vrij hier gebruik van te maken. Het is mogelijk dat de DHCP server uitstaat, u kunt ons dan bellen en vragen om deze aan te zetten.<BR/>
+                    </li>
+                    <li>
+                    Tijdens kantoortijden is er personeel van het datacenter aanwezig. Zij kunnen zonder additionele kosten kleine handelingen verrichten zoals reboots.
+                    </li>
+                    </ul>
+                </TD>
+            </TR>
+            <TR>
+                <TD class="upperline" id="footer">
+                    Op alle producten, offertes overeenkomsten en facturen van REDUNIX zijn de algemene voorwaarden van toepassing. 
+                    Deze zijn te vinden op <a href="http://www.redunix.nl/overons/voorwaarden.html">www.redunix.nl/overons/voorwaarden.html</a>.
+                </TD>
+            </TR>
+        </TABLE>
+     </BODY>
+</HTML>

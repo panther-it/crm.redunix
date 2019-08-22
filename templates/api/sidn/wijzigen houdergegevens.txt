@@ -1,0 +1,48 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+
+drs-aanvraagtype....................: wijzigen-houdergegevens
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+---------------------------- houdergegevens -----------------------
+
+houder-handle.......................: 
+
+-------------------------- adres gegevens -------------------------
+
+houder-bezoekadres-straat...........: $owner_street 
+houder-bezoekadres-huisnr...........: 
+houder-bezoekadres-huisnr-toev......: 
+houder-bezoekadres-postcode.........: $owner_zipcode
+houder-bezoekadres-plaats...........: $owner_city
+houder-bezoekadres-landcode.........: nl
+houder-bezoekadres-nietnl-1.........: 
+houder-bezoekadres-nietnl-2.........: 
+houder-bezoekadres-nietnl-3.........: 
+
+houder-postadres-straat.............: $owner_street
+houder-postadres-huisnr.............: 
+houder-postadres-huisnr-toev........: 
+houder-postadres-postcode...........: $owner_zipcode
+houder-postadres-plaats.............: $owner_city
+houder-postadres-landcode...........: nl
+houder-postadres-nietnl-1...........: 
+houder-postadres-nietnl-2...........: 
+houder-postadres-nietnl-3...........: 
+
+indien bezoekadres niet nl.
+
+houder-domicilieadres-straat........: 
+houder-domicilieadres-huisnr........: 
+houder-domicilieadres-huisnr-toev...: 
+houder-domicilieadres-postcode......: 
+houder-domicilieadres-plaats........: 
+
+------------------------- einde formulier -------------------------

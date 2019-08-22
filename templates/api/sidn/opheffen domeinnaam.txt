@@ -1,0 +1,25 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+drs-aanvraagtype....................: opheffen-domeinnaam
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+------------------------ domeinnaamgegevens -----------------------
+
+domeinnaam..........................: $domainname
+
+De deelnemer verklaart van de houder van bovenstaande domeinnaam
+een ingevuld en ondertekend opheffing domeinnaamformulier te hebben
+ontvangen waarin is ingestemd met de opheffing van bovenstaande
+domeinnaam.
+
+opheffing-akkoord...................: ja
+
+------------------------- einde formulier -------------------------
+

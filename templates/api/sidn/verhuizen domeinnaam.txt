@@ -1,0 +1,73 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+drs-aanvraagtype....................: verhuizen-domeinnaam
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+------------------------ domeinnaamgegevens -----------------------
+
+domeinnaam..........................: $domainname
+
+-------------------------- contactpersonen ------------------------
+
+houder-adminc-handle................: 
+houder-adminc-tel-landnummer........: +31
+houder-adminc-tel-nummer............: $adminc_phone
+houder-adminc-emailadres............: $adminc_email
+
+houder-adminc-achternaam............: $adminc_lastname
+houder-adminc-tussenvoegsels........: 
+houder-adminc-voorletters...........: $adminc_firstname
+houder-adminc-geslacht..............: M
+houder-adminc-tel-landnummer........: +31
+houder-adminc-tel-nummer............: $adminc_phone
+houder-adminc-emailadres............: $adminc_email
+
+houder-adminc-ook-houder-techc......: nee
+deelnemer-techc.....................: ja
+
+      houder-techc-handle...........: 
+      houder-techc-tel-landnummer...: +31
+      houder-techc-tel-nummer.......: $techc_phone
+      houder-techc-emailadres.......: $techc_email
+
+      houder-techc-achternaam.......: $techc_lastname
+      houder-techc-tussenvoegsels...: 
+      houder-techc-voorletters......: $techc_firstname
+      houder-techc-geslacht.........: M
+      houder-techc-tel-landnummer...: +31
+      houder-techc-tel-nummer.......: $techc_phone
+      houder-techc-emailadres.......: $techc_email
+
+-------------------------- nameservers ----------------------------
+
+master-nameserver-naam..............: $nameservers_ns1
+      master-nameserver-ip-adres....: 
+
+slave-nameserver-naam...............: $nameservers_ns2
+      slave-nameserver-ip-adres.....: 
+
+      slave-nameserver-naam.........: $nameservers_ns3
+      slave-nameserver-ip-adres.....: 
+
+De aanvrager van bovenstaande domeinnaam heeft verklaard dat de
+aanvraag voldoet aan de bepalingen in het Reglement voor registratie
+van .nl-domeinnamen. De deelnemer verklaart van de aanvrager een
+ingevuld en ondertekend registratiecontract te hebben ontvangen.
+
+registratiecontract-akkoord.........: ja
+
+De deelnemer verklaart van de houder van bovenstaande domeinnaam 
+een ingevuld en ondertekend verhuizing domeinnaamformulier te hebben 
+ontvangen waarin in ingestemd met de verhuizing van bovenstaande 
+domeinnaam.
+
+verhuizing-akkoord..................: ja
+
+------------------------- einde formulier -------------------------

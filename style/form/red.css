@@ -1,0 +1,72 @@
+TABLE.form
+{
+	height		: auto;
+	overflow	: hidden;
+	background-color: white;
+	background-image: url(http://www.redunix.nl/img/gradient_large.jpg);
+	background-repeat: repeat-x;
+	margin-left	: 0px;
+	width		: 650px;
+	margin-bottom	: 30px;
+}
+
+TABLE.form TR TH
+{
+        color		: #910020;
+	text-align	: right;
+	vertical-align	: top;
+	padding-left	: 50px;
+}
+
+TABLE.form TR TH A
+{
+        color           : white;
+        text-decoration : none;
+}
+
+TABLE.form TR TD
+{
+        border          : none; 
+        padding         : 2px;
+        margin          : 0px;
+	width		: 100%;
+	text-align	: left;
+}
+
+TABLE.form TR TD INPUT
+{
+        border          : none; 
+	border-bottom	: solid 1px #DDDDDD; 
+	border-left	: solid 1px #DDDDDD; 
+}
+
+.error,
+TABLE.form TR TD INPUT.error,
+TABLE.form TR TD SELECT.error,
+TABLE.form TR TD TEXTAREA.error
+{
+	border		: solid 1px red;
+}
+
+TABLE.form TR TD TEXTAREA 
+{
+        border          : none; 
+	width		: 100%;
+	background-image: url(http://www.redunix.nl/img/server_spec.jpg);
+	background-repeat: repeat-x;
+	height		: 100px;
+	border-bottom	: solid 1px #DDDDDD; 
+	border-left	: solid 1px #DDDDDD; 
+}
+
+TABLE.form SPAN.text
+{
+	display: none;
+}
+
+INPUT
+,SELECT
+{
+        background-color: transparent;
+        color		: #910020;
+}

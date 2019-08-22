@@ -1,0 +1,31 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+
+drs-ticket..........................: 
+drs-aanvraagtype....................: verhuizen-domeinnaam-akkoord2
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+---------------------------- gegevens -----------------------------
+
+domeinnaam..........................: $domainname
+
+Voor bovenstaande domeinnaam, op dit moment onder uw beheer,
+is een verhuizing aangevraagd door deelnemer
+[vooringevuld]
+
+Door bij onderstaand veld "ja" in te vullen, verklaart u dat
+bovenstaande domeinnaam versneld kan worden verhuisd.
+Door bij onderstaand veld "nee" in te vullen geeft u aan niet akkoord
+te gaan met voorgenomen verhuizing. 
+
+verhuizing-domeinnaam-akkoord.......: ja 
+
+------------------------- einde formulier -------------------------
+
+ 
+ 

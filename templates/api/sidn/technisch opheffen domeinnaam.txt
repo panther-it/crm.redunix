@@ -1,0 +1,40 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+drs-aanvraagtype....................: technisch-opheffen-domeinnaam
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+------------------------ domeinnaamgegevens -----------------------
+
+domeinnaam..........................: $domainname
+
+De deelnemer bevestigt dat de opheffing om technische redenen wordt
+aangevraagd en dat de nameservers voor bovengenoemde domeinnaam niet
+meer operationeel zijn waardoor er een lame delegation in de
+.nl-zonefile ontstaat. Geheel conform artikel 13.4 van het Reglement
+voor registratie van .nl-domeinnamen.
+
+technische-opheffing................: 
+
+Omschrijving redenen voor technische opheffing.
+
+reden...............................: 
+      reden.........................: 
+      reden.........................: 
+
+De deelnemer verklaart zich ervan bewust te zijn dat deze op eigen
+initiatief handelt en volledig verantwoordelijk is voor alle gevolgen
+die kunnen ontstaan door de opheffing van de bovengenoemde domeinnaam.
+Geheel conform artikel 13.4 van het Reglement voor registratie van
+.nl-domeinnamen.
+
+technische-opheffing-akkoord........: ja
+
+------------------------- einde formulier -------------------------
+

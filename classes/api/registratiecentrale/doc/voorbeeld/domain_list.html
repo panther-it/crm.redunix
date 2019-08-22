@@ -1,0 +1,98 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+
+<HEAD>
+	<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <TITLE>Voorbeeld: domain_list</TITLE>
+	<LINK href="../style.css" rel="stylesheet" type="text/css">
+</HEAD>
+
+<BODY>
+<SPAN class="txtHead">Voorbeeld: <I>domain_list</I></SPAN>
+<BR><BR>
+<B>Voorbeeld 1</B><BR>
+<BR>
+
+<PRE>
+ $reg = new REG_api();
+
+ $reg->addParam( "command", "domain_list" );
+ $reg->addParam( "sort", "registrant" );
+ $reg->addParam( "order", "1" );
+
+ $reg->DoTransaction();
+
+ if( $reg->Values[ "errcount" ] > 0 ) {
+  print "Fout opgetreden";
+
+  for( $i=1;$i<=$reg->Values[ "errcount" ];$i++ ) {
+   print $reg->Values[ "errno".$i ];
+  }
+ }
+ else {
+  print "OK&lt;BR>";
+  print "&lt;TABLE>";
+   for($i=0;$i<=$reg->Values["domaincount"];$i++) {
+    print "&lt;TR>";
+    print "&lt;TD>" . $reg->Values["domain[$i]"]       . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["registrant[$i]"]   . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["admin[$i]"]        . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["tech[$i]"]         . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["verloopdatum[$i]"] . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["status[$i]"]       . "&lt;/TD>";
+    print "&lt;/TR>";
+   }
+  print "&lt;/TABLE>";
+ }
+</PRE>
+
+<BR>
+
+<B>Voorbeeld 2</B><BR>
+<BR>
+
+<PRE>
+ $reg = new REG_api();
+
+ $reg->addParam( "command", "domain_list" );
+ $reg->addParam( "sort", "domain" );
+ $reg->addParam( "begin", "m" );
+ $reg->addParam( "order", "0" );
+
+ $reg->DoTransaction();
+
+ if( $reg->Values[ "errcount" ] > 0 ) {
+  print "fout opgetreden";
+
+  for( $i=1;$i<=$reg->Values[ "errcount" ];$i++ ) {
+   print $reg->Values[ "errno".$i ];
+  }
+
+ }
+ else {
+  print "OK&lt;BR>";
+  print "&lt;TABLE>";
+   for($i=0;$i<=$reg->Values["domaincount"];$i++) {
+    print "&lt;TR>";
+    print "&lt;TD>" . $reg->Values["domain[$i]"]       . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["registrant[$i]"]   . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["admin[$i]"]        . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["tech[$i]"]         . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["verloopdatum[$i]"] . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values["status[$i]"]       . "&lt;/TD>";
+    print "&lt;/TR>";
+   }
+  print "&lt;/TABLE>";
+ }
+</PRE>
+
+</BODY>
+
+
+</HTML>
+
+
+
+
+
+

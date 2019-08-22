@@ -1,0 +1,195 @@
+<HTML>
+    <HEAD>
+        <TITLE>REDUNIX - Internet Diensten</TITLE>
+        <STYLE>
+            BODY, TD
+            {
+                font-family: Lucida Console;
+                font-size: 11px;
+            }
+
+            .upperline
+            {
+                border-top: 1px solid gray;
+            }
+
+            .lowerline
+            {
+                border-bottom: 1px solid gray;
+            }
+
+            .price
+            {
+                text-align: right;
+            }
+
+            @media print
+            {
+                TR#invoiceitems
+                {
+                    height: 430px;
+                }
+
+                TABLE#metaheader TD#logo
+                {
+                /*    visibility: hidden; */
+                }
+            }
+
+            TABLE#metaheader
+            {
+                height: 350px;
+            }
+            
+            TABLE#metaheader TD#meta
+            {
+                padding-top: 150px;
+            }
+            
+            TABLE#metaheader TD#logo DIV
+            {
+                font-size: 10px;
+                padding-left: 48px;
+                width: 180px;
+            }
+
+            TABLE
+            {
+                width: 100%;
+            }
+            TH
+            {
+                text-align: left;
+                color: #772222;
+            }
+            TD
+            {
+                vertical-align: top;
+            }
+
+            #remark
+            {
+                font-size   : 14px;
+                padding-left: 80px;
+                padding-top : 60px;
+                height      : 220px;
+            }
+            #footer
+            {
+                text-align: center;
+                font-size: 8px;
+                padding-left: 80px;
+                padding-right: 80px;
+                color: #444444;
+            }
+            A
+            {
+                text-decoration: none;
+                color: #444444;
+            }
+            H1
+            {
+                font-family: Cooper SSi;
+                font-size: 24px;
+                color: #992222;
+            }
+        </STYLE>
+    </HEAD>
+    
+    <BODY>
+        <TABLE>
+            <TR>
+                <TD>
+                    <TABLE id="metaheader">
+                        <TR>
+                            <TD style="width:80px;">&nbsp;</TD>
+                            <TD id="meta">
+                                <H1>#REPEAT#</H1>
+                                #COMPANY#<BR/>
+                                #FULLNAME#<BR/>
+                                #ADDRESS#<BR/>
+                                <BR/>
+                                <BR/>
+                                Factuurnummer: #INVOICEID#<BR/>
+                                Factuurdatum : #DATESENT#<BR/>
+                            </TD>
+                            <TD style="width: 200px;" id="logo">
+                                <IMG src="http://www.redunix.nl/logo_klein.jpg" width="182" />
+                                <DIV>
+                                Postbus 25243<BR/>
+                                3001 HE Rotterdam<BR/>
+                                T 010.7142100<BR/>
+                                F 084.2213172<BR/>
+                                <A HREF="mailto:info@redunix.nl">info@redunix.nl</A><BR/>
+                                KvK 24378209<BR/>
+                                BTW NL1648.60.137.B01<BR/>
+                                Postbank 5083330<BR/>
+                                IBAN NL53 PSTB 0005 0833 30<BR/>
+                                BIC  PSTBNL21<BR/>
+                                PayPal finance@redunix.nl
+                                </DIV>
+                            </TD>
+                        </TR>
+                    </TABLE>
+                </TD>
+            </TR>
+            <TR id="invoiceitems">
+                <TD>
+                <TABLE>
+                    <TR>
+                        <TH nowrap class="upperline lowerline" style="width:  75px;">Aantal</TH>
+                        <TH nowrap class="upperline lowerline" style="width: 100% ;">Omschrijving</TH>
+                        <TH nowrap class="upperline lowerline" style="width: 200px;">Periode </TH>
+                        <TH nowrap class="upperline lowerline" style="width:  80px;" colspan="2">Prijs   </TH>
+                    </TR>
+                    <TR>
+                        <TD>#COUNT#</TD>
+                        <TD>#DESCRIPTION#</TD>
+                        <TD>#PERIOD#</TD>
+                        <TD>&euro;</TD>
+                        <TD class="price">#PRICE#</TD>
+                    </TR>
+                    <TR>
+                        <TD colspan="5">&nbsp;</TD>
+                    </TR>
+                    <TR>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Subtotaal</TD>
+                        <TD class="upperline">&euro;</TD>
+                        <TD class="upperline price">#TOTALEX#</TD>
+                    </TR>
+                    <TR>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>#TAX%#% BTW</TD>
+                        <TD>&euro;</TD>
+                        <TD class="price">#TAX#</TD>
+                    </TR>
+                    #PAYMENTS#
+                    <TR>
+                        <TD></TD>
+                        <TD></TD>
+                        <TD>Totaal</TD>
+                        <TD class="upperline">&euro;</TD>
+                        <TD class="upperline price">#TOTALIN#</TD>
+                    </TR>
+                </TABLE>
+                </TD>
+            </TR>
+            <TR>
+                <TD id="remark">
+                    Betaling binnen 14 dagen na factuurdatum op rekening 5083330 tnv REDUNIX, Rotterdam.<BR/>
+                    Onder vermelding van bovenstaand factuurnummer.<BR/>
+                </TD>
+            </TR>
+            <TR>
+                <TD class="upperline" id="footer">
+                    Op alle producten, offertes overeenkomsten en facturen van REDUNIX zijn de algemene voorwaarden van toepassing. 
+                    Deze zijn te vinden op <a href="http://www.redunix.nl/overons/voorwaarden.html">www.redunix.nl/overons/voorwaarden.html</a>.
+                </TD>
+            </TR>
+        </TABLE>
+    
+    </BODY>
+</HTML>

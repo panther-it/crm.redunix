@@ -1,0 +1,25 @@
+DIV#tab_header
+{
+	width		: 100%;
+	display		: block;
+	height		: 40px;
+	vertical-align	: middle;
+	text-align	: middle;
+}
+
+DIV#tab_header
+A
+{
+	height		: 20px;
+	width		: 200px;
+	display		: inline-block;
+	border-left	: solid 1px #910020;
+	border-top 	: solid 1px #910020;
+	padding-left	: 3px;
+}
+
+DIV.tab
+{
+	display		: none;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+
+<HEAD>
+	<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <TITLE>Voorbeeld: nameserver_list</TITLE>
+	<LINK href="../style.css" rel="stylesheet" type="text/css">
+</HEAD>
+
+<BODY>
+<SPAN class="txtHead">Voorbeeld: <I>nameserver_list</I></SPAN>
+<BR><BR>
+<B>Voorbeeld 1</B><BR>
+<BR>
+
+<PRE>
+ $reg = new REG_api();
+
+ $reg->addParam( "command", "nameserver_list" );
+
+ $reg->addParam( "sort",  "ns1" );
+ $reg->addParam( "order", "1"   );
+
+ $reg->DoTransaction();
+
+ if( $reg->Values[ "errcount" ] > 0 ) {
+  print "Fout opgetreden";
+
+  for( $i=1;$i<=$reg->Values[ "errcount" ];$i++ ) {
+   print $reg->Values[ "errno".$i ];
+  }
+ }
+ else {
+  print "OK&lt;BR>";
+  print "&lt;TABLE>";
+   for($i=0;$i<=$reg->Values[ "nscount" ];$i++) {
+    print "&lt;TR>";
+    print "&lt;TD>" . $reg->Values[ "ns_id[$i]" ]  . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values[ "ns1[$i]" ]    . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values[ "ns1_ip[$i]" ] . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values[ "ns2[$i]" ]    . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values[ "ns2_ip[$i]" ] . "&lt;/TD>";
+    print "&lt;/TR>";
+   }
+  print "&lt;/TABLE>";
+ }
+</PRE>
+
+<BR>
+
+<B>Voorbeeld 2</B><BR>
+<BR>
+
+<PRE>
+ $reg = new REG_api();
+
+ $reg->addParam( "command", "nameserver_list" );
+
+ $reg->addParam( "sort", "ns2" );
+
+ $reg->DoTransaction();
+
+ if( $reg->Values[ "errcount" ] > 0 ) {
+  print "Fout opgetreden";
+
+  for( $i=1;$i<=$reg->Values[ "errcount" ];$i++ ) {
+   print $reg->Values[ "errno".$i ];
+  }
+ }
+ else {
+  print "OK&lt;BR>";
+  print "&lt;TABLE>";
+   for($i=0;$i<=$reg->Values[ "nscount" ];$i++) {
+    print "&lt;TR>";
+    print "&lt;TD>" . $reg->Values[ "ns_id[$i]" ]  . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values[ "ns1[$i]" ]    . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values[ "ns1_ip[$i]" ] . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values[ "ns2[$i]" ]    . "&lt;/TD>";
+    print "&lt;TD>" . $reg->Values[ "ns2_ip[$i]" ] . "&lt;/TD>";
+    print "&lt;/TR>";
+   }
+  print "&lt;/TABLE>";
+ }
+</PRE>
+
+</BODY>
+
+
+</HTML>
+
+
+
+
+
+

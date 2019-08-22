@@ -1,0 +1,55 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+drs-aanvraagtype....................: wijzigen-contactpersonen
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+------------------------ domeinnaamgegevens -----------------------
+
+domeinnaam..........................: $domainname 
+
+-------------------------- contactpersonen ------------------------
+
+verwijderen.
+
+houder-adminc-handle-verwijderen....: 
+     houder-techc-handle-verwijderen: 
+
+toevoegen.
+
+houder-adminc-handle................: 
+houder-adminc-tel-landnummer........: +31
+houder-adminc-tel-nummer............: $adminc_phone
+houder-adminc-emailadres............: $adminc_email
+
+houder-adminc-achternaam............: $adminc_lastname
+houder-adminc-tussenvoegsels........: 
+houder-adminc-voorletters...........: $adminc_firstname
+houder-adminc-geslacht..............: M
+houder-adminc-tel-landnummer........: +31
+houder-adminc-tel-nummer............: $adminc_phone
+houder-adminc-emailadres............: $adminc_email
+
+houder-adminc-ook-houder-techc......: nee
+deelnemer-techc.....................: ja
+
+      houder-techc-handle...........: 
+      houder-techc-tel-landnummer...: +31
+      houder-techc-tel-nummer.......: $techc_phone
+      houder-techc-emailadres.......: $techc_email
+
+      houder-techc-achternaam.......: $techc_lastname
+      houder-techc-tussenvoegsels...: 
+      houder-techc-voorletters......: $techc_firstname
+      houder-techc-geslacht.........: M
+      houder-techc-tel-landnummer...: +31
+      houder-techc-tel-nummer.......: $techc_phone
+      houder-techc-emailadres.......: $techc_email
+
+------------------------- einde formulier -------------------------

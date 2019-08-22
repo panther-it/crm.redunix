@@ -1,0 +1,28 @@
+--------------------------- begin formulier -----------------------
+------------------------ drs identificatie ------------------------
+
+drs-deelnemernummer.................: 303278
+drs-deelnemergebruiker..............: dsu303278 
+drs-password........................: 0ea52d3e74 
+drs-deelnemer-ticket................: $domainname
+
+drs-aanvraagtype....................: wijzigen-nameservers
+drs-formulierversie.................: 1.0
+drs-taal............................: dut
+
+------------------------ domeinnaamgegevens -----------------------
+
+domeinnaam..........................: $domainname
+
+-------------------------- nameservers ----------------------------
+
+master-nameserver-naam..............: $nameservers_ns1
+      master-nameserver-ip-adres....: 
+
+slave-nameserver-naam...............: $nameservers_ns2
+      slave-nameserver-ip-adres.....: 
+
+      slave-nameserver-naam.........: $nameservers_ns3
+      slave-nameserver-ip-adres.....: 
+
+------------------------- einde formulier -------------------------

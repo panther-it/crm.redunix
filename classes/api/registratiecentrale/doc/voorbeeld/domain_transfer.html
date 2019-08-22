@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+
+<HEAD>
+	<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <TITLE>Voorbeeld: domain_transfer</TITLE>
+	<LINK href="../style.css" rel="stylesheet" type="text/css">
+</HEAD>
+
+<BODY>
+<SPAN class="txtHead">Voorbeeld: <I>domain_transfer</I></SPAN>
+<BR><BR>
+<B>Voorbeeld 1</B><BR>
+<BR>
+
+<PRE>
+ $reg = new REG_api();
+
+ $reg->addParam( "command", "domain_transfer" );
+
+ $reg->addParam( "domein", "registratiecentrale" );
+ $reg->addParam( "tld",    "nl"                 );
+
+ $mdr->addParam( "admin_id", "1046" );
+ $mdr->addParam( "tech_id",  "1047" );
+
+ $reg->addParam( "ns1",    "ns1.mijndnsserver.nl" );
+ $reg->addParam( "ns1_ip", "89.69.83.184"         );
+ $reg->addParam( "ns2",    "ns2.mijndnsserver.nl" );
+ $reg->addParam( "ns2_ip", "80.69.80.181"         );
+
+ $reg->DoTransaction();
+
+ if( $reg->Values[ "errcount" ] > 0 ) {
+  print "Fout opgetreden";
+
+  for( $i=1;$i<=$reg->Values[ "errcount" ];$i++ ) {
+   print $reg->Values[ "errno".$i ];
+  }
+ }
+ else {
+  print "OK";
+ }
+</PRE>
+
+<BR>
+
+<B>Voorbeeld 2</B><BR>
+<BR>
+
+<PRE>
+ $reg = new REG_api();
+
+ $reg->addParam( "command", "domain_transfer" );
+
+ $reg->addParam( "domein",  "registratiecentrale" );
+ $reg->addParam( "tld",     "com"                );
+
+ $reg->addParam( "lock",      "true"  );
+ $reg->addParam( "autorenew", "true"  );
+ $reg->addParam( "authkey",   "12345" );
+
+ $reg->addParam( "notify",      "true"                       );
+ $reg->addParam( "notifyemail", "info@registratiecentrale.nl" );
+
+ $reg->DoTransaction();
+
+ if( $reg->Values[ "errcount" ] > 0 ) {
+  print "fout opgetreden";
+
+  for( $i=1;$i<=$reg->Values[ "errcount" ];$i++ ) {
+   print $reg->Values[ "errno".$i ];
+  }
+
+ }
+ else {
+  print "OK";
+ }
+</PRE>
+
+</BODY>
+
+
+</HTML>
+
+
+
+
+
+
